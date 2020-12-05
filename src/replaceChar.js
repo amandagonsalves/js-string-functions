@@ -20,6 +20,4 @@ const replaceChar = (string, times) => {
   return replacedString;
 }
 
-replaceChar('x?y??z?', 2)
-
-//export default replaceChar; 
+export default replaceChar; 
