@@ -13,9 +13,8 @@ const replaceChar = (string, times) => {
       charMap [i] = charMap[i - 1].charAt(last).repeat(times);
     }
   }
-  console.log(charMap)
+
   const replacedString = charMap.join('');
-  console.log(replacedString)
 
   return replacedString;
 }
