@@ -5,20 +5,21 @@ const replaceChar = (string, times) => {
   if (charMap[0] === '?') {
     charMap[0] = last.repeat(times);
 
-    if (last === '?') {
-      charMap[0] = charMap[charMap.length - 2].repeat(times);
-    }
+    last === '?' ? charMap[0] = charMap[charMap.length - 2].repeat(times) : charMap[0];
   }
 
   for (let i = 0; i < charMap.length; i++) {
     if (charMap[i] === '?') {
-      charMap [i] = charMap[i - 1].repeat(times);
+      charMap [i] = charMap[i - 1].charAt(last).repeat(times);
     }
   }
-  
+  console.log(charMap)
   const replacedString = charMap.join('');
-  
+  console.log(replacedString)
+
   return replacedString;
 }
 
-export default replaceChar; 
+replaceChar('x?y??z?', 2)
+
+//export default replaceChar; 
