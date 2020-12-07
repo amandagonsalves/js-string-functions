@@ -19,4 +19,4 @@ const replaceChar = (string, times) => {
   return replacedString;
 }
 
-export default replaceChar; 
+module.exports = replaceChar; 

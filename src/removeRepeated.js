@@ -4,4 +4,4 @@ const removeRepeated = (string, limit) => {
   return replacedString;
 }
 
-export default removeRepeated;
+module.exports = removeRepeated;

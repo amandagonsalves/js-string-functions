@@ -26,4 +26,4 @@ const lettersSum = (string1, string2) => {
   return calc;
 }
 
-export default lettersSum; 
+module.exports = lettersSum; 
